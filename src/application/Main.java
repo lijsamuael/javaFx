@@ -32,7 +32,12 @@ public class Main extends Application {
 	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		launch(args);
-			}
+		//Class.forName("com.mysql.cj.jdbc.Driver");
+		//Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/student", "root", "");
+		//Statement stmt = con.createStatement();
+		//stmt.executeUpdate("insert into account values ('BDU1201873', 'Habtamu', 'Fentahun', 'Male', 'Software Engineering', 2012)");
+		
+	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -46,18 +51,6 @@ public class Main extends Application {
 			Scene scene = new Scene(root, 490, 350, Color.ORANGE);
 			
 			stage.setScene(scene);
-			
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/student", "root", "");
-			Statement stmt = con.createStatement();
-			//stmt.executeUpdate("insert into account values ('BDU1201873', 'Habtamu', 'Fentahun', 'Male', 'Software Engineering', 2012)");
-			ResultSet rs = stmt.executeQuery("select * from account");
-			System.out.println("id             " + "First name             " + "Last name             " + "Sex             " + "Department                     " + "id");
-			while(rs.next()) {
-				System.out.printf(rs.getString("id") + "             " +rs.getString("fname") + "             "+ rs.getString("lname")+ "             " + rs.getString("sex")+ "             " + rs.getString("department")+ "                     " + rs.getInt("batch"));
-
-			}
-
 		
 		}catch(Exception e) {
 			e.printStackTrace();

@@ -9,23 +9,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="489.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Button layoutX="198.0" layoutY="185.0" mnemonicParsing="false" text="Login">
-         <font>
-            <Font size="15.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
+     
       <Label layoutX="84.0" layoutY="91.0" prefHeight="25.0" prefWidth="96.0" text="Username : ">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <TextField layoutX="198.0" layoutY="86.0">
+      <TextField fx:id="usertxt" layoutX="198.0" layoutY="86.0">
          <font>
             <Font size="15.0" />
          </font>
@@ -35,12 +27,12 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <PasswordField layoutX="198.0" layoutY="130.0">
+      <PasswordField fx:id="passtxt" layoutX="198.0" layoutY="130.0">
          <font>
             <Font size="15.0" />
          </font>
       </PasswordField>
-      <Button cancelButton="true" layoutX="335.0" layoutY="185.0" mnemonicParsing="false" text="Back">
+       <Button fx:id="loginbtn" layoutX="198.0" layoutY="185.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: cyan;" text="Login">
          <font>
             <Font size="15.0" />
          </font>
@@ -48,7 +40,15 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Hyperlink layoutX="314.0" layoutY="290.0" text="Don't have an account?">
+      <Button fx:id="backbtn" cancelButton="true" layoutX="335.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: cyan;" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Hyperlink layoutX="314.0" layoutY="290.0" text="Don't have an account?" textFill="#0d0d0d">
          <font>
             <Font size="13.0" />
          </font>
