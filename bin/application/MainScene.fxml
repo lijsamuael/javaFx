@@ -32,7 +32,7 @@
             <Font size="15.0" />
          </font>
       </PasswordField>
-       <Button fx:id="loginbtn" layoutX="198.0" layoutY="185.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: cyan;" text="Login">
+       <Button fx:id="loginbtn" layoutX="198.0" layoutY="216.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: cyan;" text="Login">
          <font>
             <Font size="15.0" />
          </font>
@@ -40,7 +40,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="backbtn" cancelButton="true" layoutX="335.0" layoutY="185.0" mnemonicParsing="false" style="-fx-background-color: cyan;" text="Back">
+      <Button fx:id="backbtn" cancelButton="true" layoutX="321.0" layoutY="216.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: cyan;" text="Cancel">
          <font>
             <Font size="15.0" />
          </font>
@@ -48,7 +48,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Hyperlink layoutX="314.0" layoutY="290.0" text="Don't have an account?" textFill="#0d0d0d">
+      <Hyperlink fx:id="gtregister" layoutX="314.0" layoutY="290.0" onAction="#gotoregister" text="Don't have an account?" textFill="#0d0d0d">
          <font>
             <Font size="13.0" />
          </font>

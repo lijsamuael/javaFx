@@ -1,4 +1,4 @@
-package application;
+package lab_fx;
 	
 
 import java.sql.Connection;
@@ -44,58 +44,12 @@ public class Main extends Application {
 		try {
 			Stage loginpage = new Stage();
 			loginpage.show();
-			loginpage.setTitle("Samuael Ketema");
-			loginpage.getIcons().add(new Image("images/BDU.jpg"));
-			loginpage.setResizable(false);
-			Parent root = FXMLLoader.load(getClass().getResource("lab.fxml"));
-			Scene scene = new Scene(root, 600, 380);
-			loginpage.setScene(scene);
-			
-			
-			
-			
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			/*
-			Stage loginpage = new Stage();
-			loginpage.show();
 			loginpage.setTitle("Student Managment System");
 			loginpage.getIcons().add(new Image("images/BDU.jpg"));
 			loginpage.setResizable(false);
-			Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
+			Group root = new Group();
 			Scene scene = new Scene(root, 490, 350, Color.ORANGE);
 			loginpage.setScene(scene);
-			*/
 		
 		}catch(Exception e) {
 			e.printStackTrace();
